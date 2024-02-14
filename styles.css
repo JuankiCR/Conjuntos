@@ -1,0 +1,193 @@
+:root{
+    --bg-color: #18181b;
+    --border-color: #3f3f46;
+    --bg-text-light: #fefefe;
+
+    --red-50: #fdf3f3;
+    --red-100: #fbe5e5;
+    --red-200: #f8d0d0;
+    --red-300: #f3aeae;
+    --red-400: #e98080;
+    --red-500: #dd5656;
+    --red-600: #c83a3a;
+    --red-700: #9d2a2a;
+    --red-800: #8b2929;
+    --red-900: #742828;
+    --red-950: #3f1010;
+
+    --blue-50: #effbfc;
+    --blue-100: #d8f2f5;
+    --blue-200: #b5e5ec;
+    --blue-300: #82d1de;
+    --blue-400: #48b4c8;
+    --blue-500: #2c98ae;
+    --blue-600: #2a849d;
+    --blue-700: #266478;
+    --blue-800: #275463;
+    --blue-900: #244755;
+    --blue-950: #132d39;
+
+    --green-50: #f3faeb;
+    --green-100: #e3f4d3;
+    --green-200: #c8eaac;
+    --green-300: #a6db7b;
+    --green-400: #85ca51;
+    --green-500: #67af33;
+    --green-600: #589d2a;
+    --green-700: #3d6a21;
+    --green-800: #33551f;
+    --green-900: #2d491e;
+    --green-950: #15270c;
+
+    --purple-50: #fbf5fe;
+    --purple-100: #f6eafd;
+    --purple-200: #ecd5f9;
+    --purple-300: #dfb3f4;
+    --purple-400: #ce86ec;
+    --purple-500: #b657de;
+    --purple-600: #9b37c2;
+    --purple-700: #802a9d;
+    --purple-800: #6d2583;
+    --purple-900: #5c236c;
+    --purple-950: #390b47;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--bg-text-light);
+    font-size: 1.3rem;
+}
+
+#appWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+}	
+
+/* #################### Informacion de conjuntos #################### */
+
+#configWrapper{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.conjuntosWrapper{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+
+.inputItem{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a-wrapper{
+    --emphasis-500: var(--red-500);
+    --emphasis-900: var(--red-900);
+    --emphasis-950: var(--red-950);
+}
+
+.b-wrapper{
+    --emphasis-500: var(--blue-500);
+    --emphasis-900: var(--blue-900);
+    --emphasis-950: var(--blue-950);
+}
+
+
+/* #################### Resultados de conjuntos #################### */
+
+#resultWrapper{
+    margin: 0 1rem;
+}
+
+.resultItem{
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#resConjunto{
+    align-content: center;
+    align-items: center;
+    background-color: var(--purple-950);
+    border: 1px solid var(--purple-900);
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    gap: 1rem;
+    height: 200px;
+    justify-content: center;
+    padding: 1rem;
+    width: 200px;
+}
+
+/* #################### Estilo inputs #################### */
+
+.inputItem input{
+    background-color: var(--emphasis-950);
+    border: 1px solid var(--emphasis-900);
+    border-radius: 5px;
+    color: var(--bg-text-light);
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.inputItem input::placeholder{
+    color: var(--red-900);
+}
+
+.inputItem input:focus{
+    border: 1px solid var(--emphasis-500);
+    outline: none;
+}
+
+/* #################### Estilo Textarea #################### */
+
+#configWrapper textarea{
+    resize: none;
+}
+
+.inputItem textarea{
+    background-color: var(--emphasis-950);
+    border: 1px solid var(--emphasis-900);
+    border-radius: 5px;
+    color: var(--bg-text-light);
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.inputItem textarea::placeholder{
+    color: var(--red-900);
+}
+
+.inputItem textarea:focus{
+    border: 1px solid var(--emphasis-500);
+    outline: none;
+}
